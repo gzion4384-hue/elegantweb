@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10122b">
+<title>ELEGANTWEB — Detect. Create. Learn. Grow.</title>
+<meta name="description" content="ELEGANTWEB is a beginner-friendly AI learning and business toolkit. Explore AI tools, build prompts, estimate profit and learn practical skills.">
+<style>
+:root{--bg:#0b1020;--panel:#121a31;--panel2:#17213d;--text:#f4f7ff;--muted:#aab5d0;--line:#293657;--a:#8b7cff;--b:#32d6c4;--gold:#ffd479}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#20214b 0,transparent 32%),var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);line-height:1.55}button,input,textarea,select{font:inherit}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #ffffff12}.brand{font-size:1.25rem;font-weight:900;letter-spacing:.08em}.brand span{color:var(--b)}.navlinks{display:flex;gap:18px;align-items:center;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:7px 10px;border-radius:10px}.hero{padding:68px 0 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #32d6c455;background:#32d6c411;color:#83f5e8;padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:700}.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.055em;margin:20px 0}.gradient{background:linear-gradient(90deg,#fff,#9c91ff 48%,#52e8d5);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.08rem;color:var(--muted);max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:12px;padding:12px 17px;font-weight:800;cursor:pointer;transition:.2s}.btn.primary{background:linear-gradient(100deg,var(--a),#5e6dff);color:white;box-shadow:0 10px 28px #635bff2b}.btn.secondary{border:1px solid var(--line);background:#ffffff08;color:var(--text)}.btn:hover{transform:translateY(-2px)}.hero-card{padding:24px;border-radius:24px;border:1px solid #ffffff18;background:linear-gradient(145deg,#1a2444,#10162b);box-shadow:0 24px 70px #0005}.orbit{height:190px;border-radius:18px;background:radial-gradient(circle at center,#5f55d855 0,transparent 48%),linear-gradient(135deg,#151c38,#101326);display:grid;place-items:center;position:relative;overflow:hidden}.orb{width:112px;height:112px;border-radius:50%;display:grid;place-items:center;font-size:2.2rem;background:linear-gradient(145deg,#8b7cff,#32d6c4);box-shadow:0 0 60px #8b7cff66}.float{position:absolute;padding:7px 10px;border-radius:10px;background:#202b4b;border:1px solid #ffffff20;font-size:.8rem;color:#dfe6ff}.f1{top:18px;left:16px}.f2{right:14px;top:44px}.f3{bottom:18px;left:28px}.f4{right:24px;bottom:18px}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.stat{padding:12px;border:1px solid var(--line);border-radius:13px;text-align:center}.stat strong{display:block;font-size:1.15rem}.stat small{color:var(--muted)}section{padding:38px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}.section-head h2{font-size:clamp(1.6rem,3vw,2.3rem);margin:0;letter-spacing:-.03em}.section-head p{margin:5px 0 0;color:var(--muted);max-width:620px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#151e37,#10172b);border:1px solid var(--line);border-radius:18px;padding:20px;min-width:0}.card .icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#8b7cff22;font-size:1.35rem;margin-bottom:13px}.card h3{margin:0 0 7px;font-size:1.12rem}.card p{color:var(--muted);font-size:.94rem;margin:0 0 15px}.tag{display:inline-block;font-size:.75rem;padding:4px 8px;border:1px solid #ffffff20;border-radius:99px;color:#c7d0e9}.toolbox{display:grid;grid-template-columns:1fr 1fr;gap:16px}.toolbox .card{padding:22px}.field{display:flex;flex-direction:column;gap:6px;margin:12px 0}.field label{font-size:.88rem;color:#dce4fb;font-weight:700}.field input,.field textarea,.field select{width:100%;background:#0b1123;border:1px solid #354363;color:white;border-radius:10px;padding:11px 12px;outline:none}.field textarea{min-height:112px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--a);box-shadow:0 0 0 3px #8b7cff22}.result{margin-top:12px;padding:13px;border-radius:12px;background:#0b1123;border:1px solid var(--line);white-space:pre-wrap;overflow-wrap:anywhere;color:#e9eeff}.result:empty{display:none}.hint{font-size:.82rem;color:var(--muted)}.learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.lesson{display:flex;gap:14px;align-items:flex-start}.lesson-num{flex:0 0 38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#32d6c41b;color:var(--b);font-weight:900}.lesson h3{margin:0 0 4px}.lesson p{margin:0;color:var(--muted);font-size:.92rem}.notice{border:1px solid #ffd47955;background:#ffd4790d;padding:15px;border-radius:14px;color:#f6e8c7;font-size:.9rem}.cta{padding:28px;border-radius:22px;background:linear-gradient(110deg,#242354,#143b45);border:1px solid #ffffff20;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0 0 6px}.cta p{margin:0;color:#c4cce3}.footer{margin-top:35px;border-top:1px solid #ffffff15;padding:25px 0 35px;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.hidden{display:none!important}.pill{color:var(--b);font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:45px}.hero-card{max-width:560px}.grid{grid-template-columns:repeat(2,1fr)}.toolbox{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:68px;left:4%;right:4%;padding:18px;background:#11182e;border:1px solid var(--line);border-radius:14px;z-index:5;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.section-head{align-items:flex-start;flex-direction:column}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid,.learn-grid{grid-template-columns:1fr}.mini-stats{grid-template-columns:1fr 1fr 1fr}.hero h1{font-size:2.7rem}.card{padding:17px}.nav{padding:14px 0}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home" aria-label="ELEGANTWEB home">ELEGANT<span>WEB</span><span style="color:#fff">.</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#features">Features</a><a href="#tools">Free tools</a><a href="#learn">Learn AI</a><a href="#business">Business growth</a></nav>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+</header>
+<main>
+<section class="wrap hero" id="home">
+ <div>
+  <span class="eyebrow">✦ Built for curious minds and builders</span>
+  <h1>Make AI work<br>for <span class="gradient">your future.</span></h1>
+  <p>ELEGANTWEB brings practical AI learning, useful tools and business-building resources into one simple workspace. Start free, learn by doing, and grow one step at a time.</p>
+  <div class="actions"><a class="btn primary" href="#tools">Explore free tools ↗</a><a class="btn secondary" href="#learn">Start learning</a></div>
+  <p class="hint" style="margin-top:16px">Free starter edition · No account required · Designed for mobile</p>
+ </div>
+ <div class="hero-card">
+  <div class="orbit"><span class="float f1">AI learning</span><span class="float f2">Smart tools</span><div class="orb">✦</div><span class="float f3">Business ideas</span><span class="float f4">Create & grow</span></div>
+  <div class="mini-stats"><div class="stat"><strong>01</strong><small>Learn</small></div><div class="stat"><strong>02</strong><small>Build</small></div><div class="stat"><strong>03</strong><small>Grow</small></div></div>
+ </div>
+</section>
+<section class="wrap" id="features">
+ <div class="section-head"><div><span class="pill">One place to get started</span><h2>What you can do here</h2><p>A useful first version, with practical tools that work directly in your browser.</p></div></div>
+ <div class="grid">
+  <article class="card"><div class="icon">🔎</div><h3>Understand AI content</h3><p>Learn what signs can help you investigate AI-generated images, videos, audio and text.</p><span class="tag">Guides · Not proof</span></article>
+  <article class="card"><div class="icon">✍️</div><h3>Build better prompts</h3><p>Turn a rough idea into a clear prompt for writing, image, video or business tasks.</p><span class="tag">Interactive tool</span></article>
+  <article class="card"><div class="icon">📈</div><h3>Grow a business</h3><p>Explore business ideas, estimate profit and learn practical steps to reach customers.</p><span class="tag">Made for beginners</span></article>
+ </div>
+</section>
+<section class="wrap" id="tools">
+ <div class="section-head"><div><span class="pill">Try them now</span><h2>Free interactive tools</h2><p>These starter tools run in your browser. They do not need a paid AI API.</p></div></div>
+ <div class="toolbox">
+  <article class="card">
+   <div class="icon">🧩</div><h3>Smart Prompt Builder</h3><p>Describe what you want to do and create a more useful AI prompt.</p>
+   <div class="field"><label for="goal">What do you want AI to help you do?</label><textarea id="goal" placeholder="Example: Create a 30-second advert for my shoe business"></textarea></div>
+   <div class="field"><label for="kind">Choose a task</label><select id="kind"><option>Business</option><option>Writing</option><option>Image generation</option><option>Video generation</option><option>Learning</option><option>Website creation</option></select></div>
+   <div class="field"><label for="level">Your experience</label><select id="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+   <button class="btn primary" id="buildPrompt">Build my prompt</button> <button class="btn secondary" id="copyPrompt">Copy result</button>
+   <div class="result" id="promptResult" aria-live="polite"></div>
+  </article>
+  <article class="card">
+   <div class="icon">🧮</div><h3>Business Profit Calculator</h3><p>Estimate what remains after your listed costs. Enter amounts in naira or another currency.</p>
+   <div class="field"><label for="selling">Selling price (₦)</label><input id="selling" type="number" min="0" placeholder="e.g. 15000"></div>
+   <div class="field"><label for="cost">Product or service cost (₦)</label><input id="cost" type="number" min="0" placeholder="e.g. 8000"></div>
+   <div class="field"><label for="extra">Other costs per sale (₦)</label><input id="extra" type="number" min="0" placeholder="e.g. 1500"></div>
+   <div class="field"><label for="quantity">Number of sales</label><input id="quantity" type="number" min="1" value="1"></div>
+   <button class="btn primary" id="calcProfit">Calculate estimate</button>
+   <div class="result" id="profitResult" aria-live="polite"></div><p class="hint">This is an estimate, not financial advice. Remember to include taxes, returns and any costs you leave out.</p>
+  </article>
+  <article class="card">
+   <div class="icon">🛡️</div><h3>Suspicious Message Checklist</h3><p>Review common warning signs before trusting a job offer, investment message or online seller.</p>
+   <div class="field"><label for="message">Paste the message (remove private details first)</label><textarea id="message" placeholder="Paste a suspicious message here..."></textarea></div>
+   <button class="btn primary" id="checkMessage">Check warning signs</button>
+   <div class="result" id="messageResult" aria-live="polite"></div>
+   <p class="hint">This is a basic checklist, not a fraud verdict. Verify claims independently.</p>
+  </article>
+  <article class="card">
+   <div class="icon">🧠</div><h3>AI Content Verification Guide</h3><p>Use this checklist to investigate content without relying on a detector score alone.</p>
+   <div class="field"><label for="contentType">What are you checking?</label><select id="contentType"><option>Image</option><option>Video</option><option>Text</option><option>Audio or voice</option><option>Website</option></select></div>
+   <button class="btn primary" id="showGuide">Show checklist</button>
+   <div class="result" id="guideResult" aria-live="polite"></div>
+   <p class="hint">No automated AI detector can reliably identify every AI-generated item. Seek multiple independent clues.</p>
+  </article>
+ </div>
+</section>
+<section class="wrap" id="learn">
+ <div class="section-head"><div><span class="pill">Learn by doing</span><h2>Your beginner roadmap</h2><p>Build skills in a sensible order instead of trying every AI tool at once.</p></div></div>
+ <div class="learn-grid">
+  <article class="card lesson"><div class="lesson-num">1</div><div><h3>Learn how prompts work</h3><p>State your goal, give context, describe the format you need, and ask for revisions.</p></div></article>
+  <article class="card lesson"><div class="lesson-num">2</div><div><h3>Choose one useful tool</h3><p>Start with one tool that solves a real task. Check its free-plan limits before signing up.</p></div></article>
+  <article class="card lesson"><div class="lesson-num">3</div><div><h3>Make something helpful</h3><p>Create a product description, a study guide, a simple website or a business advert.</p></div></article>
+  <article class="card lesson"><div class="lesson-num">4</div><div><h3>Get feedback and improve</h3><p>Show your work to potential users, learn what they need, and improve your next version.</p></div></article>
+ </div>
+</section>
+<section class="wrap" id="business">
+ <div class="cta"><div><span class="pill">Start small. Think big.</span><h2>Build something people actually need.</h2><p>Choose a real problem, make a useful first version, and improve it with feedback.</p></div><a class="btn primary" href="#tools">Use the free tools ↗</a></div>
+ <div class="notice" style="margin-top:16px"><strong>Transparency note:</strong> ELEGANTWEB is an early prototype. The prompt builder, profit calculator, and checklist tools work locally in your browser. Live AI detection, AI generation, accounts, cloud saving, and payments are not connected yet. Detection guides provide general advice and do not determine whether content is AI-generated.</div>
+</section>
+</main>
+<footer class="wrap footer"><div><strong style="color:#fff">ELEGANTWEB</strong><br>Detect. Create. Learn. Grow.</div><div>Starter edition · Built to grow with its users</div><div>© <span id="year"></span> ELEGANTWEB</div></footer>
+<script>
+const $=id=>document.getElementById(id);
+$("year").textContent=new Date().getFullYear();
+$("menuBtn").addEventListener("click",()=>$("navlinks").classList.toggle("open"));
+document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>$("navlinks").classList.remove("open")));
+$("buildPrompt").addEventListener("click",()=>{
+ const goal=$("goal").value.trim(),kind=$("kind").value,level=$("level").value;
+ if(!goal){$("promptResult").textContent="Please describe what you want to achieve first.";return}
+ $("promptResult").textContent=`Act as a skilled ${kind.toLowerCase()} assistant. My experience level is ${level.toLowerCase()}.\n\nGOAL:\n${goal}\n\nINSTRUCTIONS:\n1. Ask up to 3 short questions if important information is missing.\n2. Give me a clear, practical step-by-step solution.\n3. Use simple language and realistic examples.\n4. Separate free options from paid options and state any important limitations.\n5. Organise the answer with headings and a checklist.\n6. Do not invent facts. Clearly identify assumptions and uncertainties.\n\nStart with the most useful next step.`;
+});
+$("copyPrompt").addEventListener("click",async()=>{
+ const t=$("promptResult").textContent;if(!t){$("promptResult").textContent="Build a prompt first, then copy it.";return}
+ try{await navigator.clipboard.writeText(t);$("copyPrompt").textContent="Copied ✓";setTimeout(()=>$("copyPrompt").textContent="Copy result",1600)}
+ catch(e){const r=document.createRange();r.selectNodeContents($("promptResult"));const s=window.getSelection();s.removeAllRanges();s.addRange(r);$("promptResult").textContent+="\n\nSelect the highlighted text and use your device's Copy command."}
+});
+$("calcProfit").addEventListener("click",()=>{
+ const selling=Number($("selling").value),cost=Number($("cost").value),extra=Number($("extra").value||0),q=Number($("quantity").value||1);
+ if($("selling").value===""||$("cost").value===""||selling<0||cost<0||extra<0||!Number.isFinite(q)||q<1){$("profitResult").textContent="Enter valid non-negative prices and at least 1 sale.";return}
+ const profit=selling-cost-extra, total=profit*q, margin=selling>0?(profit/selling*100):0;
+ const fmt=n=>"₦"+n.toLocaleString("en-NG",{maximumFractionDigits:2});
+ $("profitResult").textContent=`Estimated profit per sale: ${fmt(profit)}\nEstimated profit for ${q} sale(s): ${fmt(total)}\nProfit margin: ${margin.toFixed(1)}%\n${profit<0?"Warning: your listed costs are higher than the selling price.":"Remember to include any missing costs before making a decision."}`;
+});
+$("checkMessage").addEventListener("click",()=>{
+ const t=$("message").value.trim();if(!t){$("messageResult").textContent="Paste a message to review.";return}
+ const checks=[
+ ["urgent pressure",/urgent|immediately|act now|within \d+ hours|last chance|limited time/i],
+ ["guaranteed or unusually high returns",/guaranteed profit|double your money|risk[- ]?free|100% return|sure odds|no risk/i],
+ ["requests for PINs, passwords or OTPs",/otp|one.time password|pin number|password|bank login|verification code/i],
+ ["upfront payment request",/pay.*(fee|registration|processing|activation)|registration fee|processing fee|send.*money/i],
+ ["suspicious links",/bit\.ly|tinyurl|click here|claim now|http:\/\//i],
+ ["unexpected prize or giveaway",/you have won|winner|claim your prize|free gift/i]
+ ];
+ const found=checks.filter(c=>c[1].test(t)).map(c=>"• Possible warning sign: "+c[0]+".");
+ $("messageResult").textContent=(found.length?found.join("\n"):"No common warning phrase was detected by this simple checklist.")+"\n\nNext steps:\n• Verify through an official website or phone number you find independently.\n• Never share passwords, PINs or OTPs.\n• Do not send money because of pressure.\n• A message can still be fraudulent even if this checklist finds no warning signs.";
+});
+$("showGuide").addEventListener("click",()=>{
+ const type=$("contentType").value;
+ const guides={
+ "Image":["Check the original source and context.","Look for inconsistent reflections, hands, text, shadows or repeated patterns—but remember real images can also contain oddities.","Use reverse-image search and look for provenance or creator statements.","Do not treat one visual clue as proof."],
+ "Video":["Check the original source, date and context.","Inspect multiple frames, transitions, shadows, reflections, lip synchronisation and audio continuity.","Look for independent reporting or the earliest known upload.","Metadata can be missing or altered; no single clue proves a video is fake."],
+ "Text":["Look for cited sources and verify the claims independently.","Check whether the writing includes specific, verifiable details and accurate references.","AI detectors can produce false positives, especially with short or edited text.","Do not use a detector score alone to accuse someone of using AI."],
+ "Audio or voice":["Check who published the recording and whether the speaker confirms it through another channel.","Listen for unnatural cadence or audio artefacts, but note that compression affects real recordings too.","For urgent money requests, call the person using a number you already trust.","Use a specialist detector as one clue, not as proof."],
+ "Website":["Check the exact domain spelling and contact details.","Verify company registration, official social accounts and claims independently where possible.","Look for copied text, inconsistent details, unrealistic offers and suspicious payment requests.","A polished website does not prove legitimacy; an AI-made website is not automatically fraudulent."]
+ };
+ $("guideResult").textContent=guides[type].map((x,i)=>(i+1)+". "+x).join("\n");
+});
+</script>
+</body>
+</html>
